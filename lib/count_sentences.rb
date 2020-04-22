@@ -19,8 +19,8 @@ class String
     # self.each.split("? ")
     # self.each.split("! ")
     # self.flatten.count
-    
+
     # the gsub will add a | after each punctuation mark, and then can split after | and whitespace
-    self.gsub(/[.?!]/, '\0|').split("| ").count 
+    self.gsub(/[.?!]/, '\0|').split("| ").count
   end
 end
