@@ -15,11 +15,11 @@ class String
   end
 
   def count_sentences
-    self.split!(". ")
-    self.each.split!("? ")
-    self.each.split!("! ")
-    self.flatten.count
-    # string.gsub(/[.?!]/, '\0|')
+    # self.split!(". ")
+    # self.each.split!("? ")
+    # self.each.split!("! ")
+    # self.flatten.count
+    self.gsub(/[.?!]/, '\0|').count
     # self.split(". ", "? ", "! ").count
   end
 end
