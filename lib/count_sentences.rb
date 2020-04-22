@@ -15,9 +15,9 @@ class String
   end
 
   def count_sentences
-    self.split(". ")
-    self.each.split("? ")
-    self.each.split("! ")
+    self.split!(". ")
+    self.each.split!("? ")
+    self.each.split!("! ")
     self.flatten.count
     # string.gsub(/[.?!]/, '\0|')
     # self.split(". ", "? ", "! ").count
