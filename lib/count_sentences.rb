@@ -19,6 +19,7 @@ class String
     self.each.split("? ")
     self.each.split("! ")
     self.flatten.count
+    # string.gsub(/[.?!]/, '\0|')
     # self.split(". ", "? ", "! ").count
   end
 end
